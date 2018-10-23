@@ -31,7 +31,7 @@
             </fg-input>
           </div>
           <div class="col-lg-12">
-            <drop-down tag="div" title="Simple">
+            <drop-down title="Simple" tag="div" class="remove-list-style">
               <li><a href="#">Notification 1</a></li>
               <li><a href="#">Notification 2</a></li>
               <li><a href="#">Notification 3</a></li>
@@ -45,9 +45,12 @@
   </div>
 </template>
 <script>
-  import Dropdown from '~/components/UIComponents/Dropdown';
-
   export default {
     layout: "dashboard"
   }
 </script>
+<style>
+  .remove-list-style {
+    list-style: none;
+  }
+</style>
