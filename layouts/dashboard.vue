@@ -37,6 +37,10 @@
           <i class="ti-bell"></i>
           <p>Notifications</p>
         </sidebar-link>
+        <sidebar-link to="/pheno_form">
+          <i class="ti-cloud"></i>
+          <p>Phenotype Form</p>
+        </sidebar-link>
       </side-bar>
     <no-ssr>
       <notifications>
@@ -70,9 +74,9 @@
     },
     methods: {
       toggleSidebar() {
-        // if (this.$sidebar && this.$sidebar.showSidebar) {
-        //   this.$sidebar.displaySidebar(false)
-        // }
+        if (this.$sidebar && this.$sidebar.showSidebar) {
+          this.$sidebar.displaySidebar(false)
+        }
       }
     }
   }
